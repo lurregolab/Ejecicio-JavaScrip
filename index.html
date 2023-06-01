@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>EJERCICIOS HTML</h1>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li>
+                    <h2>1. ¿Eres bellisimo/a?</h2>
+                    <input id="firstQuestion" type="text" onkeyup="oneQuestion()">
+                    <p id="firQuestion"></p>
+                </li>
+                <li>
+                    <h2>2. ¿Ingresa un numero?</h2>
+                    <input id="secondQuestion" type="number" onkeyup="twoQuestion()">
+                    <p id="secQuestion"></p>
+                </li>
+                <li>
+                    <h2>3. Clic en Prompt</h2>
+                    <button id="prompt-num" onclick="treeQuestion()">Prompt</button>
+                   
+                </li>
+                <li>
+                    <h2>4. Ingresa el número de cliente.</h2>
+                    <input id="fourQuestion" type="number">
+                    <button id="prompt-num" onclick="fourQuestion()">Jugar</button>
+                    <p id="forQuestion"></p>
+                </li>
+                <li>
+                    <h2>5. funcion para verificar el numero menor</h2>
+                    <p>Ingresa 2 numero</p>
+                    <input id="fiveQuestion" type="number">
+                    <input id="fiveQuestiontow" type="number">
+                    <button id="prompt-num" onclick="fiveQuestion()">validar</button>
+                    <p id="fivQuestion"></p>
+                </li>
+                <li>
+                    <h2>6. funcion para verificar el numero menor</h2>
+                    <h3>Ingresa 3 numero</h3>
+                    <input id="sixQuestion" type="number">
+                    <input id="sixQuestiontow" type="number">
+                    <input id="sixQuestiontree" type="number">
+                    <button id="prompt-num" onclick="sixQuestion()">validar</button>
+                    <p id="siQuestion"></p>
+                </li>
+                <li>
+                    <h2>7. funcion para verificar dia de la semana</h2>
+                    <h3>Ingresa dia de la semana</h3>
+                    <input id="sevenQuestion" type="test" onkeyup="sevenQuestion()">
+                    <p id="seveQuestion"></p>
+                </li>
+                <li>
+                    <h2>8. funcion para verificar la calificacion</h2>
+                    <h3>Ingresa la calificacion entre 1 y 10.</h3>
+                    <input id="eigthQuestion" type="number" onkeyup="eigthQuestion()">
+                    <p id="eigtQuestion"></p>
+                </li>
+                <li>
+                    <h2>9. funcion valor del helado</h2>
+                    <h3>Selecciona el helado que quieres</h3>
+                    <input type="radio" name="status" value="topping" id="topping" onclick="nineQuestion()"> <label for="topping">El helado sin topping</label> 
+                    <input type="radio" name="status" value="oreo" id="oreo" onclick="nineQuestion()"> <label for="oreo">El topping de oreo</label> 
+                    <input type="radio" name="status" value="KitKat" id="KitKat" onclick="nineQuestion()"> <label for="KitKat">El topping de KitKat</label> 
+                    <input type="radio" name="status" value="brownie" id="brownie" onclick="nineQuestion()"> <label for="brownie">El topping de brownie</label> 
+                    <input type="radio" name="status" value="otro" id="otro" onclick="nineQuestion()"> <label for="otro">Otro topping</label> 
+                    <input id="diferente" type="test" disabled onkeyup="nineQuestion()">
+                    <p id="ninQuestion"></p>
+                </li>
+                <li>
+                    <h2>10. funcion portal de educación</h2>
+                    <h3>Selecciona el portal educativo</h3>
+                    <input type="radio" name="status" value="Course" id="Course" onclick="tenQuestion()"> <label for="Course">Course</label> 
+                    <input type="radio" name="status" value="Carrera" id="Carrera" onclick="tenQuestion()"> <label for="Carrera">Carrera</label> 
+                    <input type="radio" name="status" value="Master" id="Master" onclick="tenQuestion()"> <label for="Master">Master</label> 
+                    <br>
+                    <input type="checkbox" id="descuento" value="second_checkbox" onclick="tenQuestion()"> <label for="cbox2">tienes beca</label>
+                    <br>
+                    <input type="checkbox" name="status" value="becaFacebook" id="becaFacebook" disabled onclick="tenQuestion()"> <label for="becaFacebook">Beca Facebook</label> 
+                    <input type="checkbox" name="status" value="becaGoogle" id="becaGoogle" disabled onclick="tenQuestion()"> <label for="becaGoogle">Beca Google</label> 
+                    <input type="checkbox" name="status" value="becaJesua" id="becaJesua" disabled onclick="tenQuestion()"> <label for="becaJesua">Beca Jesua</label> 
+                    <p id="teQuestion"></p>
+                </li>
+                <li>
+                    <h2>11. Programa para calcular el total a pagar por un vehículo</h2>
+                    <h3>Ingresar numero de kilometros</h3>
+                    <label for="Coche">Coche</label> <input type="number" id="Coche" onclick="elevenQuestion()"><p id="totalCoche"></p>
+                    <br>
+                    <label for="moto">moto</label> <input type="number" id="moto" onclick="elevenQuestion()"><p id="totalMoto"></p>
+                    <br>
+                    <label for="autobus">autobús</label> <input type="number" id="autobus" onclick="elevenQuestion()"><p id="totalAutobus"></p>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
