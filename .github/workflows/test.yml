@@ -1,15 +1,21 @@
 name: Test
 
-on: [push, pull_request]
+on: [push] # Ejecutar el flujo de trabajo cuando haya un push al repositorio
 
 jobs:
   test:
-    name: Run tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # El sistema operativo en el que se ejecutará el flujo de trabajo
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2 # Obtiene el código del repositorio
 
-    - name: Running Test
-      run: npm run test
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Selecciona la versión de Node.js que desees utilizar
+
+    - name: Install dependencies
+      run: npm install # Instala las dependencias del proyecto (asegúrate de que el script de prueba esté listado en el package.json)
+
+    - name: Run tests
+      run: npm test # Ejecuta el script de prueba (script.test.js)
