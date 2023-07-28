@@ -1,3 +1,9 @@
+/**
+ * Clears the content of a given HTML element.
+ * 
+ * @param {HTMLElement} campo - The HTML element to be cleared.
+ * @returns {void}
+ */
 function limpiar(campo) {
     campo.innerHTML = "";
 }
