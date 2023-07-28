@@ -27,4 +27,15 @@ describe('limpiar_function', () => {
     });
 
 
+    // Tests that the limpiar function does not modify the content of a given HTML element if it is already empty
+    it('test_behaviour_not_modify_if_empty', () => {
+        const campo = document.createElement('div');
+        campo.innerHTML = '';
+
+        limpiar(campo);
+
+        expect(campo.innerHTML).toBe('');
+    });
+
+
 });
